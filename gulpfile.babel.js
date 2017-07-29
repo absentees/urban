@@ -126,7 +126,7 @@ gulp.task('javascript', ['jshint'], function () {
 
 	if (envProd) {
 		return out.pipe($.uglify())
-			.pipe($.rev())
+			// .pipe($.rev())
 			.pipe(gulp.dest(dist + 'js'))
 			.pipe($.rev.manifest(dist + 'manifest.json', {
 				merge: true,
@@ -273,7 +273,7 @@ gulp.task("build", function (callback) {
 		"images",
 		"copy",
 		"metalsmith",
-		"revreplace",
+		// "revreplace",
 		callback)
 });
 
