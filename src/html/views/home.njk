@@ -1,0 +1,10 @@
+{% extends "master.njk" %}
+
+{% block content %}
+	<ul>
+		{% for item in collections.sites %}
+			<li><a href="{{item.data.id}}">{{ item.data.title }}</a></li>
+		{% endfor %}
+	</ul>
+
+{% endblock %}
