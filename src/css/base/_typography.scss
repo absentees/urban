@@ -13,11 +13,16 @@
 
 html {
 	font-size: 62.5%;
+
+	@include mobile {
+		font-size: 45%;
+	}
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-family: sans-serif;
 }
 
 a {

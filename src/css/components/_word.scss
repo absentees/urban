@@ -1,0 +1,23 @@
+.word {
+	h1 {
+		font-size: 4.8rem;
+	}
+	.meaning {
+		font-size: 2.6rem;
+	}
+
+	.links {
+		margin-top: 4rem;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.next-link,
+	.buy-link {
+		padding: 10px 20px;
+		background-color: black;
+		color: white;
+		font-size: 1.8rem;
+		font-weight: bold;
+	}
+}

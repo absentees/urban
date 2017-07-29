@@ -4,9 +4,13 @@ html {
 }
 
 .container {
-	width: 100%;
+	width: 90%;
 	max-width: $max-width;
 	margin: 0 auto;
 
 	position: relative;
+
+	// @include mobile {
+	// 	width: 90%;
+	// }
 }

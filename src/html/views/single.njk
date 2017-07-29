@@ -1,9 +1,5 @@
 {% extends "master.njk" %}
 
 {% block content %}
-	<h1 class="word">{{ data.title }} <span class="availabiliy">{{ data.available }}</span></h1>
-	<p><strong>{{data.meaning}}</strong></p>
-	<p>{{data.example}}</p>
-	<a class="next-link" data-id="{{data.id}}" href="#">Next</a>
-
+	{% include "partials/word.njk" %}
 {% endblock %}

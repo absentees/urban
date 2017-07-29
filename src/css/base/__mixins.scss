@@ -71,6 +71,12 @@
   white-space: nowrap;
 }
 
+@mixin mobile {
+  @media (max-width: #{500px}) {
+    @content;
+  }
+}
+
 
 	// swaps neat 2.0 to desktop first
 	@function _neat-parse-media($media) {
@@ -80,4 +86,3 @@
 	    @return "#{$media}";
 	  }
 	}
-
