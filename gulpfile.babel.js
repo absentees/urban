@@ -161,6 +161,7 @@ gulp.task('metalsmith', function (cb) {
 			'directory': 'src/html/views',
 			'rename': true
 		}))
+		.use(require('metalsmith-permalinks'))
 		.build(function (err) {
 			if (err) {
 				throw err;

@@ -1,3 +1,16 @@
-.primary-header {
+header {
+	display: flex;
+	align-items: center;
   color: $c-black;
+
+	.title,
+	.about {
+		flex: 1;
+	}
+
+	.about {
+		@extend h1;
+		text-align: right;
+		font-weight: bold;
+	}
 }

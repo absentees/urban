@@ -1855,6 +1855,10 @@ debug@2.6.4:
   dependencies:
     ms "0.7.3"
 
+debug@~0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -4606,6 +4610,15 @@ metalsmith-metadata-directory@^1.0.1:
     debug "2.6.3"
     glob "7.1.1"
 
+metalsmith-permalinks@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/metalsmith-permalinks/-/metalsmith-permalinks-0.5.0.tgz#0fec5b1f0687828c198d33b5d479cc1cec4b1a1f"
+  dependencies:
+    debug "~0.7.4"
+    moment "^2.5.1"
+    slug-component "~1.1.0"
+    substitute "https://github.com/segmentio/substitute/archive/0.0.1.tar.gz"
+
 metalsmith-register-helpers@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/metalsmith-register-helpers/-/metalsmith-register-helpers-0.3.0.tgz#270025491c2b094fc29f06754dbe2b0bc2ffb917"
@@ -4779,7 +4792,7 @@ module-deps@^4.0.8:
     through2 "^2.0.0"
     xtend "^4.0.0"
 
-moment@2.x.x:
+moment@2.x.x, moment@^2.5.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -6139,7 +6152,7 @@ slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
 
-slug-component@^1.1.0:
+slug-component@^1.1.0, slug-component@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/slug-component/-/slug-component-1.1.0.tgz#224290a04591bf9ac08b9c622d3a14f43e3a0df7"
 
@@ -6462,6 +6475,10 @@ subarg@^1.0.0:
   resolved "https://registry.yarnpkg.com/subarg/-/subarg-1.0.0.tgz#f62cf17581e996b48fc965699f54c06ae268b8d2"
   dependencies:
     minimist "^1.1.0"
+
+"substitute@https://github.com/segmentio/substitute/archive/0.0.1.tar.gz":
+  version "0.0.1"
+  resolved "https://github.com/segmentio/substitute/archive/0.0.1.tar.gz#432866985b03c3b0d3f71ac63d1ae1a18dfaf47d"
 
 sum-up@^1.0.1:
   version "1.0.3"

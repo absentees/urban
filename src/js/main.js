@@ -9,7 +9,7 @@ $(document).ready(function () {
 	var collection = hashids.decode($nextLink.attr('data-id'));
 
 	var next = Math.round(Math.random()*collection[1]);
-	console.log(next);
+	console.log(next + ' of ' + collection[1]);
 
 	$nextLink.attr('href', '/' + hashids.encode(next, collection[1]));
 });
