@@ -6,10 +6,8 @@ $(document).ready(function () {
 	var hashids = new Hashids('mrpoopybutthole', 10, 'abcdefghijklmnopqrstuvwxyz1234567890');
 	var $nextLink = $('.next-link');
 
-	var collection = hashids.decode($nextLink.attr('data-id'));
+	var count = $nextLink.attr('data-count');
+	var next = Math.round(Math.random()*count);
 
-	var next = Math.round(Math.random()*collection[1]);
-	console.log(next + ' of ' + collection[1]);
-
-	$nextLink.attr('href', '/' + hashids.encode(next, collection[1]));
+	$nextLink.attr('href', '/' + hashids.encode(next));
 });

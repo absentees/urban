@@ -3,6 +3,7 @@
 /dist
 /node_modules
 /src/data
+/src/html/data/
 *.log
 
 .env
