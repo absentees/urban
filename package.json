@@ -4,7 +4,8 @@
 		"version": "1.0.0",
 		"author": "Present Company",
 		"scripts": {
-				"init": "nodemon ./lib/initWords.js"
+				"dump": "node ./lib/airDump.js",
+				"build": "npm run dump && gulp build"
 		},
 		"dependencies": {
 				"airtable": "^0.5.0",
