@@ -3,14 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{% if data.title %}{{ data.title }} – {% endif %}Relevant Domains</title>
-<meta property="og:title" content="Relevant Domains"/>
+<meta property="og:title" content="{% if data.title %}{{ data.title }} – {% endif %}Relevant Domains"/>
 
-<meta name="description" content="Relevant Domains">
-<meta property="og:description" content="Relevant Domains" />
+<meta name="description" content="Relevant Domains scrapes Urban Dictionary for the latest relevant crap and generates .com domains.">
+<meta property="og:description" content="Relevant Domains scrapes Urban Dictionary for the latest relevant crap and generates .com domains." />
 
 <meta property="og:url" content="http://relevant.domains" />
 
-<meta property="og:image" content="http://placehold.it/1200/630" />
+<meta property="og:image" content="http://placehold.it/1200x630/ffffff/000000.png?text={% if data.title %}{{ data.title }}{% else %}Relevant Domains{% endif %}" />
 
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -19,4 +19,4 @@
 <meta property="og:type" content="website" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://placehold.it/1200/630" />
+<meta name="twitter:image" content="http://placehold.it/1200x630/ffffff/000000.png?text={% if data.title %}{{ data.title }}{% else %}Relevant Domains{% endif %}" />
