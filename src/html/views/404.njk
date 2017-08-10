@@ -1,0 +1,16 @@
+{% extends "master.njk" %}
+
+{% block content %}
+	{% set first = collections.sites | first %}
+
+	<div class="word">
+		<h1>404.com<span class="availabiliy"> is not found</span></h1>
+		<p class="meaning"><strong>Something went wrong, sorry.</strong> – via <a target="_blank" href="http://relevant.domains">Relevant Domains</a></span></p>
+		<div class="links">
+			<a class="buy-link" data-id="{{first.data.id}}" href="/">Back to home</a>
+			<a class="next-link" data-count="{{first.data.count}}" href="#">Next</a>
+		</div>
+
+	</div>
+
+{% endblock %}
