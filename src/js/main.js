@@ -4,7 +4,7 @@ import Clipboard from 'clipboard';
 
 $(document).ready(function () {
 
-	$('.copy-url').val(window.location);
+	$('.copy-url').text(window.location);
 
 	var clipboard = new Clipboard('.copy-button');
 	clipboard.on('success', function () {

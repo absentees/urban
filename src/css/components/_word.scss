@@ -28,6 +28,7 @@
 	.copy {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		flex-wrap: wrap;
 		margin-top: 3rem;
 		text-align: center;
@@ -35,6 +36,10 @@
 		text-align: center;
 		font-size: 1.4rem;
 		color: gray;
+
+		@include mobile {
+			flex-direction: column;
+		}
 
 		p {
 			font-size: 1.4rem;
@@ -44,11 +49,7 @@
 		.copy-url {
 			border: none;
 			outline: none;
-			width: 230px;
-
-			@include mobile {
-				width: 160px;
-			}
+			color: black;
 		}
 
 		.copy-button {
@@ -58,7 +59,13 @@
 			background-color: gray;
 			text-decoration: underline;
 
+			margin: 0 0 0 2rem;
 			padding: 5px 10px;
+
+			@include mobile {
+				margin: 2rem 0 0 0;
+				width: 200px;
+			}
 		}
 
 		.copied {
