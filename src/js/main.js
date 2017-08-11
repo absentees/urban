@@ -7,7 +7,7 @@ $(document).ready(function () {
 	var $nextLink = $('.next-link');
 
 	var count = $nextLink.attr('data-count');
-	var next = Math.round(Math.random()*count);
+	var next = Math.floor(Math.random() * count) + 1;
 
 	$nextLink.attr('href', '/' + hashids.encode(next));
 });
